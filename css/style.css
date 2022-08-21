@@ -28,7 +28,7 @@ body {
 }
 
 header {
-    background-color: rgb(15, 15, 16);
+    background-color: rgb(40, 40, 53);
     color: aliceblue;
     text-align: center;
     padding: 20px 0;
@@ -80,7 +80,7 @@ li {
 
 h2, h3, h4, h5, h6 {
     font-family: Shrikhand, Arial, Helvetica, sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     margin: 0px;
 }
 
@@ -97,7 +97,9 @@ h2 {
 aside {
     width: 33%;
     padding-top: 160px;
-    padding-left: 15px;
+    padding-left: 35px;
+    padding-right: 25px;
+
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 20px;
     background-color: rgb(16, 0, 163);
@@ -105,14 +107,14 @@ aside {
 }
 
 .white-round {
-    width: 40px;
-    height: 40px;
-    border: 2px solid aliceblue;
-    border-radius: 20px;
+    min-width: 50px;
+    height: 50px;
+    border: 3px solid aliceblue;
+    border-radius: 29px;
     display: flex;
-    margin-right: 15px;
+    margin-right: 25px;
     position: relative;
-    top: -5px;
+    top: -14px;
 }
 
 .fa-solid , .far , .fas {
@@ -135,8 +137,8 @@ section {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding-top: 80px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 2%;
+    padding-left: 2%;
     background-color: rgb(0, 0, 255);
     color: aliceblue;
 
@@ -148,8 +150,8 @@ section {
 }
 
 .compétences {
-    width: 75%;
-    padding-right: 5%;
+    width: 65%;
+    padding-right: 1%;
     border-right: 1px solid white;
 }
 
@@ -158,8 +160,8 @@ section {
 }
 
 .qualités {
-    min-width: 25%;
-    margin-left: 5%;
+    min-width: 35%;
+    margin-left: 3%;
     margin-right: 20px;
 }
 
@@ -186,4 +188,49 @@ span {
 
 .experiences li {
     padding-left: 20px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+    .capacités {
+        flex-direction: column;
+    }
+
+    .compétences {
+        border: none;
+        margin-bottom: 80px;
+        width: 100%;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        width: 100%;
+        padding-top: 80px;
+    }
+
+    section {
+        width: 100%;
+        padding-top: 160px;
+    }
+
+    .capacités {
+        flex-direction: column;
+    }
+    
+    .compétences {
+        border: none;
+        margin-bottom: 80px;
+        width: 100%;
+    }
+
+    .qualités {
+        width: 100%;
+    }
 }
